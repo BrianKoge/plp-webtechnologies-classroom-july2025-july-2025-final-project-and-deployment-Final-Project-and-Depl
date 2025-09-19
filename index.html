@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>OrbitX — Explore Beyond Earth</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+	<header class="site-header">
+		<div class="container nav">
+			<div class="brand">
+				<div class="brand-mark" aria-hidden="true"></div>
+				<a href="index.html" aria-label="OrbitX home">OrbitX</a>
+			</div>
+			<nav>
+				<button id="menuButton" class="menu-btn" aria-expanded="false">Menu</button>
+				<div class="nav-links">
+					<a href="index.html">Home</a>
+					<a href="planets.html">Planets</a>
+					<a href="book.html">Book</a>
+					
+				</div>
+			</nav>
+		</div>
+	</header>
+
+	<main class="container">
+		<section class="hero">
+			<div>
+				<h1>Space tourism for the new age</h1>
+				<p>Humanity has conquered the stars. Choose your destination and we’ll take you there, safely and in style.</p>
+				<div class="cta">
+					<a class="btn primary" href="planets.html">Explore Planets</a>
+					<a class="btn" href="book.html">Book a Session</a>
+				</div>
+			</div>
+			<div class="hero-card">
+				<div class="preview" role="img" aria-label="Stylized galaxy preview"></div>
+				<p class="section-title">Featured</p>
+				<p>OrbitX offers curated journeys across terrestrial worlds, gas giants, and exotic anomalies.</p>
+			</div>
+		</section>
+
+		<section>
+			<h2 class="section-title">Why OrbitX</h2>
+			<p>Certified pilots. Carbon-neutral drives. Transparent pricing. A lifetime of stories in a few orbits.</p>
+		</section>
+	</main>
+
+	<footer class="site-footer">
+		<div class="container">
+			<p>© <span id="year"></span> OrbitX. Explore beyond Earth.</p>
+		</div>
+	</footer>
+
+	<script src="js/main.js"></script>
+	<script>
+		document.getElementById("year").textContent = new Date().getFullYear();
+	</script>
+</body>
+</html>
+

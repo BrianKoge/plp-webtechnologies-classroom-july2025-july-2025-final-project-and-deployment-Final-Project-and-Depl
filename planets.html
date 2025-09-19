@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Planets — OrbitX</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="css/planets.css">
+</head>
+<body>
+	<header class="site-header">
+		<div class="container nav">
+			<div class="brand">
+				<div class="brand-mark" aria-hidden="true"></div>
+				<a href="index.html" aria-label="OrbitX home">OrbitX</a>
+			</div>
+			<nav>
+				<button id="menuButton" class="menu-btn" aria-expanded="false">Menu</button>
+				<div class="nav-links">
+					<a href="index.html">Home</a>
+					<a href="planets.html" aria-current="page">Planets</a>
+					<a href="book.html">Book</a>
+					
+				</div>
+			</nav>
+		</div>
+	</header>
+
+	<main class="container">
+		<section>
+			<h1>Destinations</h1>
+			<p class="section-title">Browse featured worlds and plan your journey.</p>
+			<div class="planet-grid">
+				<article class="planet-card">
+					<img class="media" alt="Mercury" src="./images/planets/Mercury.jpeg">
+					<h3>Mercury</h3>
+					<p>Rugged horizons and solar winds. Short, intense getaways.</p>
+				</article>
+				<article class="planet-card">
+					<img class="media" alt="Venus" src="https://upload.wikimedia.org/wikipedia/commons/e/e5/Venus-real_color.jpg">
+					<h3>Venus</h3>
+					<p>Cloud palaces above a golden glow. Aerial cruises only.</p>
+				</article>
+				<article class="planet-card">
+					<img class="media" alt="Mars" src="https://upload.wikimedia.org/wikipedia/commons/0/02/OSIRIS_Mars_true_color.jpg">
+					<h3>Mars</h3>
+					<p>Red dunes, ancient canyons, sunsets like no other.</p>
+				</article>
+				<article class="planet-card">
+					<video class="media" muted autoplay loop playsinline poster="https://upload.wikimedia.org/wikipedia/commons/e/e2/Jupiter.jpg">
+						<source src="https://upload.wikimedia.org/wikipedia/commons/transcoded/4/4d/Jupiter_New_Horizons.ogv/Jupiter_New_Horizons.ogv.480p.vp9.webm" type="video/webm">
+						<img alt="Jupiter" src="https://upload.wikimedia.org/wikipedia/commons/e/e2/Jupiter.jpg">
+					</video>
+					<h3>Jupiter</h3>
+					<p>Skim the cloud tops; storms spanning worlds. Guided flybys.</p>
+				</article>
+				<article class="planet-card">
+					<video class="media" muted autoplay loop playsinline poster="https://upload.wikimedia.org/wikipedia/commons/c/c7/Saturn_during_Equinox.jpg">
+						<source src="https://upload.wikimedia.org/wikipedia/commons/transcoded/1/16/Saturn_from_Cassini-Huygens.ogg/Saturn_from_Cassini-Huygens.ogg.480p.webm" type="video/webm">
+						<img alt="Saturn" src="https://upload.wikimedia.org/wikipedia/commons/c/c7/Saturn_during_Equinox.jpg">
+					</video>
+					<h3>Saturn</h3>
+					<p>Ringlight cruises with panoramic observatories.</p>
+				</article>
+				<article class="planet-card">
+					<img class="media" alt="Neptune" src="https://upload.wikimedia.org/wikipedia/commons/5/56/Neptune_Full.jpg">
+					<h3>Exotics</h3>
+					<p>Ice giants, rogue worlds, and aurora sanctuaries.</p>
+				</article>
+			</div>
+		</section>
+
+		<section>
+			<p><a class="btn primary" href="book.html">Book your session</a></p>
+		</section>
+
+		<section>
+			<p class="credits">
+				Image and video credits: <a href="https://www.nasa.gov/" target="_blank" rel="noopener">NASA</a>, <a href="https://commons.wikimedia.org/wiki/Main_Page" target="_blank" rel="noopener">Wikimedia Commons</a>.
+			</p>
+		</section>
+	</main>
+
+	<footer class="site-footer">
+		<div class="container">
+			<p>© <span id="year"></span> OrbitX. Explore beyond Earth.</p>
+		</div>
+	</footer>
+
+	<script src="js/main.js"></script>
+	<script src="js/planets.js"></script>
+	<script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>
+

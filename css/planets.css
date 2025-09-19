@@ -1,0 +1,25 @@
+.planet-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+	gap: 16px;
+}
+.planet-card {
+	background: var(--bg-elev);
+	border: 1px solid rgba(77,243,255,0.15);
+	border-radius: 14px;
+	padding: 14px;
+	box-shadow: var(--shadow);
+}
+.planet-card .media { width: 100%; aspect-ratio: 16 / 9; object-fit: cover; border-radius: 10px; margin-bottom: 10px; display: block; background: #0a0f18; }
+.planet-card h3 { margin: 6px 0 6px; }
+.planet-card p { color: var(--muted); margin: 0; }
+
+/* Attribution / Credits */
+.credits {
+	margin-top: 16px;
+	font-size: 13px;
+	color: var(--muted);
+	opacity: 0.9;
+}
+.credits a { color: var(--accent); }
+
