@@ -70,83 +70,13 @@ Deploy your project and confirm that:
 
 ---
 
-## 🛰️ My Project Plan: Futuristic Space Tourism Website
-
-**Purpose:** A simple, modern website with a futuristic vibe that showcases planets (blog-style entries) and includes a minimal booking form to request a tour/session.
-
-**Working title:** "OrbitX — Explore Beyond Earth"
-
-### Pages (3–5 total)
-* Home: Hero section with tagline, brief intro, CTA buttons (Explore Planets, Book).
-* Planets (Blog-style): Grid/list of planet cards with image, short description, and a details view/modal.
-* Book a Session: Simple form (name, email, preferred planet, date, notes) with basic validation and success message.
-* About (optional): Short story of "humanity conquering space" and brand vision.
-* Contact (optional): Social links and lightweight contact info.
-
-### Layout & Navigation
-* Shared header: logo/brand on the left, nav links on the right; responsive hamburger on mobile.
-* Shared footer: copyright, quick links, social icons.
-* Navigation map: Home → Planets → (optional) Planet Details Modal; Home → Book a Session; Header links to all top-level pages.
-
-### Visual Style
-* Futuristic, minimal UI: dark background, neon accents, soft glows.
-* Color palette: charcoal #0b0f16, accent cyan #00e5ff, magenta #ff2bd1, soft white #e6f1ff.
-* Fonts: modern sans (e.g., Poppins/Inter) + monospace accent for small labels.
-* Subtle animations: hover glows, fade-in on scroll, card tilt.
-* Background: starfield gradient or animated stars (very light, non-distracting).
-
-### Interactivity (JavaScript)
-* Mobile menu toggle.
-* Planet card interactions: expand/details modal with more info.
-* Simple filter/search for planets (by type: terrestrial, gas giant, exotic).
-* Form validation: required fields, email pattern, success toast.
-
-### Content Plan
-* 6–8 planets with image, short summary, category/type, travel note.
-* Each entry: title, hero image, 60–100 word description, fun fact.
-
-### Structure
-```
-project/
-  index.html              (Home)
-  planets.html            (Planets listing)
-  book.html               (Booking form)
-  about.html              (Optional)
-  contact.html            (Optional)
-  css/
-    styles.css            (Global styles)
-    planets.css           (Page-specific tweaks)
-  js/
-    main.js               (Nav/menu, shared scripts)
-    planets.js            (Card interactions, filter)
-    form.js               (Validation, success handling)
-  images/
-    planets/              (Planet images)
-    ui/                   (Logos, icons, background)
-```
-
-### Accessibility & Responsiveness
-* Semantic HTML5; alt text on images; focus-visible states.
-* Mobile-first layout with CSS grid/flex responsive breakpoints.
-
-### Deployment
-* Option A: GitHub Pages (quick and simple).
-* Option B: Netlify (nice for forms and previews).
-
-### Minimal Timeline
-1) Scaffold pages and folders
-2) Style global theme and header/footer
-3) Build Planets listing (cards + modal)
-4) Implement booking form with validation
-5) Test responsiveness and accessibility
-6) Deploy and add live URL to this README
-
 ## Deliverables
 
 1. A GitHub repository containing:
 
    * Your complete project code, properly organized
    * A `README.md` file explaining your project purpose, structure, and live URL
+   * Live Site: https://orbitx254.netlify.app
 2. A live deployed website (hosted via GitHub Pages, Netlify, or Vercel)
 
 ---
